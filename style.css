@@ -99,3 +99,21 @@ footer{
   font-size:.95rem;
 }
 footer p{margin-top:10px}
+/* ICON STRIP */
+.icon-strip{
+  background:#ffffff;
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  padding:40px 8%;
+  box-shadow:0 8px 30px rgba(30,136,229,.08);
+}
+.icon{
+  text-align:center;
+  font-weight:600;
+  color:#0f172a;
+}
+.icon img{
+  height:54px;
+  margin-bottom:10px;
+}
