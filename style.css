@@ -24,7 +24,10 @@ header{
   top:0;
   z-index:100;
 }
-header img{height:90px}
+header img{
+  height:90px;
+  padding:6px;
+}
 nav a{
   margin-left:22px;
   text-decoration:none;
