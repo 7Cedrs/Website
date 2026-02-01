@@ -34,14 +34,26 @@ nav a{
 nav a:hover{color:var(--water)}
 section{padding:80px 8%}
 .hero{
-  background:linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),url('hero-water.jpg') center/cover no-repeat;
+  background:linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+             url('hero-water.jpg') center/cover no-repeat;
   color:#fff;
   min-height:75vh;
   display:flex;
   align-items:center;
+  animation:heroSlide 16s infinite;
 }
-.hero h1{font-size:3rem;margin-bottom:18px}
-.hero p{font-size:1.2rem;max-width:900px}
+@keyframes heroSlide{
+  0%,45%{
+    background-image:
+      linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+      url('hero-water.jpg');
+  }
+  50%,95%{
+    background-image:
+      linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+      url('hero-solar.jpg');
+  }
+}
 .btn{
   background:var(--sun);
   color:#000;
