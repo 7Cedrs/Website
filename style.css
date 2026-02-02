@@ -23,7 +23,7 @@ header{
 }
 
 header img{
-  height:72px; /* balanced size */
+  height:150px; /* balanced size */
 }
 
 nav{
@@ -160,4 +160,144 @@ section{
 @keyframes fadeUp{
   from{opacity:0; transform:translateY(12px)}
   to{opacity:1; transform:translateY(0)}
+}
+/* FOOTER */
+.site-footer{
+  background:#0f172a;
+  color:#e5e7eb;
+  padding:70px 8% 30px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:50px;
+}
+
+.site-footer h4{
+  color:#f59e0b;
+  margin-bottom:15px;
+  font-size:1.05rem;
+}
+
+.site-footer p,
+.site-footer li{
+  font-size:.95rem;
+  line-height:1.6;
+}
+
+.site-footer ul{
+  list-style:none;
+  padding:0;
+}
+
+.site-footer a{
+  color:#e5e7eb;
+  text-decoration:none;
+}
+
+.site-footer a:hover{
+  color:#1e88e5;
+}
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-top:50px;
+  padding-top:20px;
+  font-size:.85rem;
+  text-align:center;
+  color:#9ca3af;
+}
+/* SOLUTIONS / USE CASES */
+.solutions{
+  padding:90px 8%;
+  background:#f6fbff;
+  text-align:center;
+}
+
+.solutions h2{
+  font-size:2rem;
+  margin-bottom:12px;
+}
+
+.solutions .intro{
+  max-width:720px;
+  margin:0 auto 60px;
+  color:#475569;
+}
+
+.solution-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+
+.solution-card{
+  background:#ffffff;
+  padding:35px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(30,136,229,.08);
+  transition:transform .3s ease;
+}
+
+.solution-card:hover{
+  transform:translateY(-6px);
+}
+
+.solution-card h3{
+  color:#1e88e5;
+  margin-bottom:12px;
+}
+.f-icon{
+  margin-right:6px;
+  font-size:.85rem;
+  opacity:.75;
+}
+.has-mega{
+  position:relative;
+}
+
+.mega-menu{
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#ffffff;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  padding:30px;
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:.3s ease;
+  z-index:999;
+  min-width:700px;
+}
+
+.has-mega:hover .mega-menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+.mega-menu h4{
+  color:#1e88e5;
+  margin-bottom:8px;
+  font-size:1rem;
+}
+
+.mega-menu p{
+  font-size:.9rem;
+  color:#475569;
+}
+.solutions-strip{
+  background:#f1f8ff;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:25px 8%;
+  font-weight:600;
+  color:#1e88e5;
+  flex-wrap:wrap;
 }
