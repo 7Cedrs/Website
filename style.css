@@ -13,26 +13,33 @@ body{
   background:var(--bg);
   line-height:1.65;
 }
-header{
-  background:#fff;
-  border-bottom:4px solid var(--water);
-  padding:18px 8%;
+.hero{
+  background:
+    linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+    url('hero-water.jpg') center/cover no-repeat;
+  color:#fff;
+  min-height:75vh;
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  position:sticky;
-  top:0;
-  z-index:100;
+  animation:heroSlide 24s infinite;
 }
-header img{
-  height:90px;
-  padding:6px;
-}
-nav a{
-  margin-left:22px;
-  text-decoration:none;
-  font-weight:600;
-  color:var(--dark);
+
+@keyframes heroSlide{
+  0%,30%{
+    background-image:
+      linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+      url('hero-water.jpg');
+  }
+  33%,63%{
+    background-image:
+      linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+      url('hero-solar.jpg');
+  }
+  66%,100%{
+    background-image:
+      linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
+      url('hero-construction.jpg');
+  }
 }
 nav a:hover{color:var(--water)}
 section{padding:80px 8%}
