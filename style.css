@@ -301,3 +301,20 @@ section{
   color:#1e88e5;
   flex-wrap:wrap;
 }
+/* TIN BADGE */
+.tin-badge{
+  display:inline-block;
+  background:#f1f8ff;
+  border-left:4px solid #1e88e5;
+  padding:14px 20px;
+  margin-top:30px;
+  font-size:.95rem;
+  color:#0f172a;
+}
+
+.tin-badge span{
+  display:block;
+  font-size:.85rem;
+  color:#475569;
+  margin-top:4px;
+}
